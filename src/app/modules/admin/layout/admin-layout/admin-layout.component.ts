@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SideMenuComponent } from '../../../shared/components/side-menu/side-menu.component';
+import { VarelaSidemenuComponent} from 'varela-sidemenu'
 
 @Component({
   selector: 'app-admin-layout',
-  imports: [RouterOutlet,SideMenuComponent],
-  templateUrl: './admin-layout.component.html',
+  imports: [RouterOutlet, VarelaSidemenuComponent],  
+templateUrl: './admin-layout.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export  default class AdminLayoutComponent { 
