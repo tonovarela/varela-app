@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { VarelaSidemenuComponent} from 'varela-sidemenu'
+import { VarelaSidemenuComponent,TitleColor} from 'varela-sidemenu'
 
 @Component({
   selector: 'app-admin-layout',
@@ -11,6 +11,7 @@ templateUrl: './admin-layout.component.html',
 export  default class AdminLayoutComponent { 
   isAuthenticated = signal(true)
 
+  TitleColor = TitleColor
 
   onLogin() {
     this.isAuthenticated = signal(true)
